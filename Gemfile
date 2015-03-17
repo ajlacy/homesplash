@@ -13,6 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+# Zurb Foundation Gem
+gem 'zurb-foundation', '~> 4.3.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -26,6 +28,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Way better than WeBrick
 gem 'thin'
 
+#formatting dates
+gem 'stamp'
+
+gem 'font-awesome-rails'
+
+#beautiful printing
+gem 'awesome_print'
 
 group :development, :test do
   #SIMMA DOWN NAH!
@@ -33,6 +42,9 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+#call 'byebug' anywhere in the code to the stop execution and get
+gem 'byebug'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

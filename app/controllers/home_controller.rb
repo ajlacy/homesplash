@@ -9,7 +9,8 @@ class HomeController < ApplicationController
     when 16..19
       ["Buenas Tardes", "Afternoon!"].sample
     when 20..23, 0..4
-      "Buenas Noches"
+      "Buenas Noches" 
     end
+    @quip = Quote.all.sample.quip
   end
 end
